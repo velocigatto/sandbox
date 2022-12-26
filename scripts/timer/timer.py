@@ -12,9 +12,9 @@ def main(argv):
 
     for opt, arg in opts:
         if opt == '--help':
-            print("help in here")  # TODO insert help
+            print("help in here")
             sys.exit()
-        elif opt in ("-S", "--show_all"):
+        elif opt in ("-S", "--show_all"): #todo -S [a = all, n = none (default), p = partial (solo tipo ogni minuto/ogni ora e gli ultimi 10s],
             show_all = True
         elif opt in ("-h", "--hours"):
             hours = int(arg)
